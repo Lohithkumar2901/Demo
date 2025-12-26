@@ -1,27 +1,57 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Excel Import Demo</title>
-  <link rel="stylesheet" href="styles.css" />
+  <title>Excel Import Demo | Company Portal</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="container">
-    <h1>Excel Import Demo</h1>
-
-    <div class="controls">
-      <button id="importBtn">Import Excel from D:\demo</button>
-      <button id="loadDataBtn">Load Stored Data</button>
-      <span id="status"></span>
+  <header class="site-header">
+    <div class="header-content">
+      <img src="logo.png" alt="Company Logo" class="logo" />
+      <h1>Excel Import Demo</h1>
+      <nav class="main-nav">
+        <a href="#" class="nav-link active">Home</a>
+        <a href="#" class="nav-link">About</a>
+        <a href="#" class="nav-link">Contact</a>
+      </nav>
     </div>
+  </header>
 
-    <div class="table-wrapper">
-      <table id="dataTable">
-        <thead id="tableHead"></thead>
-        <tbody id="tableBody"></tbody>
-      </table>
+  <main>
+    <div class="container">
+      <section class="intro">
+        <h2>Welcome to the Company Data Import Portal</h2>
+        <p>Import Excel files and view stored data securely and efficiently. This portal is designed for professional use within the company.</p>
+      </section>
+
+      <div class="controls">
+        <button id="importBtn"><span class="icon">📥</span> Import Excel</button>
+        <button id="loadDataBtn"><span class="icon">📊</span> Load Stored Data</button>
+        <span id="status"></span>
+      </div>
+
+      <div class="table-wrapper">
+        <table id="dataTable">
+          <thead id="tableHead"></thead>
+          <tbody id="tableBody"></tbody>
+        </table>
+      </div>
     </div>
-  </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-content">
+      <span>&copy; 2025 Company Name. All rights reserved.</span>
+      <span class="footer-links">
+        <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
+      </span>
+    </div>
+  </footer>
 
   <script src="script.js"></script>
 </body>
